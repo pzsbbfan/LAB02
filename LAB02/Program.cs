@@ -90,7 +90,8 @@ namespace COMP100SEC007_LAB02
                     case 4:
                         Console.WriteLine("thank you for using");
                         Console.ReadLine();
-                        return;
+                        Environment.Exit(0);
+                        break;
                     //user inputs number not in (1~4)
                     default:
                         Console.WriteLine("The number is out of range please try again");
