@@ -34,6 +34,8 @@ namespace COMP100SEC007_LAB02
                 userInput = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine();
 
+                Stopwatch sw = Stopwatch.StartNew();
+                sw.Start();
                 //using swith statment to handle different user inputs
                 switch (userInput)
                 {
@@ -99,6 +101,8 @@ namespace COMP100SEC007_LAB02
                         continue;
                 }
                 Console.WriteLine("Press any key to continue");
+                sw.Stop();
+                Console.WriteLine(sw.ElapsedMilliseconds);
                 Console.ReadKey();
                 Console.Clear();
             
